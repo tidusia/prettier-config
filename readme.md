@@ -22,12 +22,12 @@ Add the following scripts to your package.json :
 {
   "scripts": {
     "prettier": "prettier --ignore-path .gitignore \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "format": "npm run prettier -- --write",
-    "format:check": "npm run prettier -- --list-different"
+    "prettier:write": "npm run prettier -- --write",
+    "prettier:check": "npm run prettier -- --list-different"
   }
 }
 ```
 
-The `format` command will format all files (not git-ignored) in your project that have the matching extension.
+The `prettier:write` command will format all files (not git-ignored) in your project that have the matching extension.
 
-The `format:check` do not change files but check that all files are formatted properly. Something you can use in a pre-commit / CI for example.
+The `prettier:check` do not change files but check that all files are formatted properly. Something you can use in a pre-commit / CI for example.
