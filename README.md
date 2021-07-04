@@ -11,10 +11,10 @@ npm i -D @tidusia/prettier-config prettier
 Then create a `.prettierrc.js` file at the root of your project with the following content :
 
 ```js
-module.exports = require("@tidusia/prettier-config")
+module.exports = require("@tidusia/prettier-config");
 ```
 
-## Usage 
+## Usage
 
 Add the following scripts to your package.json :
 

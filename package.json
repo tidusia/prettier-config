@@ -13,8 +13,16 @@
     "url": "git+ssh://git@github.com/tidusia/prettier-config.git"
   },
   "scripts": {
+    "prettier": "prettier --ignore-path .gitignore \"**/*.{js,jsx,ts,tsx,json,md,mdx,html,css}\"",
+    "format": "npm run prettier -- --write",
+    "format:check": "npm run prettier -- --list-different",
+    "pre-commit": "npm run format:check",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Thibaud Duthoit <contact@thibaud-duthoit.fr>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.3.2",
+    "semantic-release": "^17.4.4"
+  }
 }
