@@ -17,11 +17,13 @@
     "format": "npm run prettier -- --write",
     "format:check": "npm run prettier -- --list-different",
     "pre-commit": "npm run format:check",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "author": "Thibaud Duthoit <contact@thibaud-duthoit.fr>",
   "license": "MIT",
   "devDependencies": {
+    "husky": "^7.0.0",
     "prettier": "^2.3.2",
     "semantic-release": "^17.4.4"
   }
