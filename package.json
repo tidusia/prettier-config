@@ -1,6 +1,6 @@
 {
   "name": "@tidusia/prettier-config",
-  "version": "0.0.3",
+  "version": "0.1.0-development",
   "description": "Share my favorite prettier config across projects",
   "keywords": [
     "javascript",
@@ -10,11 +10,22 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/tidusia/prettier-config.git"
+    "url": "https://github.com/tidusia/prettier-config.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prettier": "prettier --ignore-path .gitignore \"**/*.{js,jsx,ts,tsx,json,md,mdx,html,css}\"",
+    "format": "npm run prettier -- --write",
+    "format:check": "npm run prettier -- --list-different",
+    "pre-commit": "npm run test",
+    "test": "npm run format:check",
+    "prepare": "husky install",
+    "semantic-release": "semantic-release"
   },
   "author": "Thibaud Duthoit <contact@thibaud-duthoit.fr>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^7.0.0",
+    "prettier": "^2.3.2",
+    "semantic-release": "^17.4.4"
+  }
 }

@@ -18,4 +18,4 @@ module.exports = {
   //below line only for windows users facing CLRF and eslint/prettier error
   // non windows users feel free to delete it
   endOfLine: "auto",
-}
+};
