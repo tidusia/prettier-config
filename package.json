@@ -1,6 +1,6 @@
 {
   "name": "@tidusia/prettier-config",
-  "version": "0.1.0-development",
+  "version": "0.0.0-semantically-released",
   "description": "Share my favorite prettier config across projects",
   "keywords": [
     "javascript",
@@ -15,7 +15,7 @@
   "scripts": {
     "prettier": "prettier --ignore-path .gitignore \"**/*.{js,jsx,ts,tsx,json,md,mdx,html,css}\"",
     "format": "npm run prettier -- --write",
-    "format:check": "npm run prettier -- --list-different",
+    "format:check": "npm run prettier -- --check",
     "pre-commit": "npm run test",
     "test": "npm run format:check",
     "prepare": "husky install",
