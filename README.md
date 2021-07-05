@@ -26,7 +26,7 @@ Add the following scripts to your package.json :
   "scripts": {
     "prettier": "prettier --ignore-path .gitignore \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "format": "npm run prettier -- --write",
-    "format:check": "npm run prettier -- --list-different"
+    "format:check": "npm run prettier -- --check"
   }
 }
 ```
