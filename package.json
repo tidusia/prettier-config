@@ -24,8 +24,8 @@
   "author": "Thibaud Duthoit <contact@thibaud-duthoit.fr>",
   "license": "MIT",
   "devDependencies": {
-    "husky": "^7.0.0",
-    "prettier": "^2.3.2",
-    "semantic-release": "^17.4.4"
+    "husky": "^7.0.4",
+    "prettier": "^2.4.1",
+    "semantic-release": "^17.4.7"
   }
 }
