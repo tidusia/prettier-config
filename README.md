@@ -24,14 +24,13 @@ Add the following scripts to your package.json :
 ```json
 {
   "scripts": {
-    "prettier": "prettier --ignore-path .gitignore \"**/*.{js,jsx,ts,tsx,json,md,mdx,html,css}\"",
-    "format": "npm run prettier -- --write",
-    "format:check": "npm run prettier -- --check"
+    "prettier:write": "prettier . --write",
+    "prettier:check": "prettier . --check",
   }
 }
 ```
 
-The `format` command will format all files (not git-ignored) in your project that have the matching extension.
+The `prettier:write` command will format all files in your project.
 
 The `format:check` do not change files but check that all files are formatted properly. Something you can use in a pre-commit / CI for example.
 
@@ -40,4 +39,4 @@ The `format:check` do not change files but check that all files are formatted pr
 For example, in Webstorm, open "Preferences" -> "Languages & Frameworks" -> "JavaScript" -> "Prettier" (you need the Prettier plugin).
 
 Choose your preferred prettier package (from node_module VS globally installed for example).
-Update the "Run for files:" glob pattern to match the pattern you specified in the `prettier` script in your `package.json` (from the section above).
+Update the "Run for files:" glob pattern to whatever you find usefull in your project.
