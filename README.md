@@ -25,7 +25,7 @@ Add the following scripts to your package.json :
 {
   "scripts": {
     "prettier:write": "prettier . --write",
-    "prettier:check": "prettier . --check",
+    "prettier:check": "prettier . --check"
   }
 }
 ```

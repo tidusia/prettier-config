@@ -13,11 +13,10 @@
     "url": "https://github.com/tidusia/prettier-config.git"
   },
   "scripts": {
-    "prettier": "prettier --ignore-path .gitignore \"**/*.{js,jsx,ts,tsx,json,md,mdx,html,css}\"",
-    "format": "npm run prettier -- --write",
-    "format:check": "npm run prettier -- --check",
+    "prettier:write": "prettier . --write",
+    "prettier:check": "prettier . --check",
     "pre-commit": "npm run test",
-    "test": "npm run format:check",
+    "test": "npm run prettier:check",
     "prepare": "husky install",
     "semantic-release": "semantic-release"
   },
