@@ -5,6 +5,8 @@
 
 ⚠️ Archived project, I now prefer to simply copy paste the file. Updated documentation is now [on my second brain](https://thibaud-duthoit.notion.site/Prettier-e33747e1f5de45cf93882d5d696b5a8c).
 
+---
+
 The way I found to share my favorite prettier config across projects
 
 ## Installation
