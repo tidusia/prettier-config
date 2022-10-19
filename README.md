@@ -3,6 +3,8 @@
 ![Github actions](https://github.com/tidusia/prettier-config/actions/workflows/release.yml/badge.svg)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
+⚠️ Archived project, I now prefer to simply copy paste the file. Updated documentation is now [on my second brain](https://thibaud-duthoit.notion.site/Prettier-e33747e1f5de45cf93882d5d696b5a8c).
+
 The way I found to share my favorite prettier config across projects
 
 ## Installation
